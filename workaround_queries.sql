@@ -14,6 +14,11 @@ Select SYS_CONTEXT('USERENV','SERVICE_NAME') Service_Name
       ,SYS_CONTEXT('USERENV','INSTANCE_NAME') Intance_Node_Name
 From Dual;
 
+-- Database Name
+Select Ora_Database_Name From Dual;
+Select Global_Name From Global_Name;
+
+
 -- Service Names for the DB will be created for databases, to check all available service names
 -- have to find a work around query for this
 Select * From all_services;
